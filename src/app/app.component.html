@@ -1,0 +1,34 @@
+<hello name="{{ name }}"></hello>
+
+<div>
+  <h2>Participantes:</h2>
+  <div class="side-by-side">
+    <div>
+      <h3>Direitas:</h3>
+      <ul>
+        <li *ngFor="let direita of participantesDireita">
+          {{ direita }}
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>Esquerdas:</h3>
+      <ul>
+        <li *ngFor="let esquerda of participantesEsquerda">
+          {{ esquerda }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <button (click)="raffle()">Sortear</button>
+
+  <div *ngIf="duplasSorteadas.length > 0">
+    <h2>Duplas:</h2>
+    <ul>
+      <li *ngFor="let dupla of duplasSorteadas">
+        {{ dupla }}
+      </li>
+    </ul>
+  </div>
+</div>

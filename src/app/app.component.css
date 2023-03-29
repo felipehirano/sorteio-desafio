@@ -1,0 +1,13 @@
+p {
+  font-family: Lato;
+}
+
+.side-by-side {
+  display: flex;
+  gap: 200px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
